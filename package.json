@@ -1,6 +1,6 @@
 {
+  "homepage": "https://myusername.github.io/front-end",
   "name": "front-end",
-  "homepage": "http://anonytest.cf",
   "version": "0.1.0",
   "proxy": "",
   "private": true,
@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "freeice": "^2.2.2",
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -28,6 +29,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
